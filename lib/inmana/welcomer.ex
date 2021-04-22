@@ -3,9 +3,9 @@ defmodule Inmana.Welcomer do
     age = String.to_integer(age)
 
     name
-      |> String.trim
-      |> String.capitalize
-      |> evaluate(age)
+    |> String.trim()
+    |> String.capitalize()
+    |> evaluate(age)
   end
 
   defp evaluate(name, age) when age >= 18 do
